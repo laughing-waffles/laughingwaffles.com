@@ -1,0 +1,20 @@
+<script type="application/ld+json">
+  {
+    "@type": "WebPage",
+    "name": "{{ site.title }}",
+    "description": {{ site.description | jsonify }},
+    "publisher": {
+      "@type": "ProfilePage",
+      "name": {{ site.title | jsonify }}
+    },
+    "inLanguage": "us-EN",
+    "primaryImageOfPage": {
+      "@type": "ImageObject",
+      "url": "{{ page.image | default: site.og_image | absolute_url }}"
+    },
+    "url": "{{ canonical_url }}",
+    "author": {
+      "@id": "https://www.judsonlmoore.com/authors/judsonlmoore"
+    }
+  }
+</script>
