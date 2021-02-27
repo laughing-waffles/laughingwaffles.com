@@ -181,10 +181,13 @@ layout: compress
 
   <section class="contact bg-primary" id="contact">
     <div class="container">
+
+      {% include form.html %}
+
       {{ content }}
+
     </div>
   </section>
-
 
   <section class="cta">
     <div class="cta-content">
@@ -222,6 +225,19 @@ layout: compress
 
   <!-- Custom scripts for this template -->
   <script src="{{ 'assets/js/new-age.min.js' | relative_url }}"></script>
+
+  <script>new ClipboardJS('.btn');
+    $("#myForm").submit(function(e) {
+   e.preventDefault();
+    $.post( 'https://objectif.app/watershell/email.php', $('#myForm').serialize(), function(data) {
+       },
+       'json' // I expect a JSON response
+    );
+    $("#emailHelp").text("Thanks! We'll be in touch soon.");
+    $("#emailHelp").css("color","green");
+    $( "#emailHelp" ).removeClass( "text-muted" );
+  });
+  </script>
 
   {% include schema.html %}
     
