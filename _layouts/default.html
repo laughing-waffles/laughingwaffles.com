@@ -25,20 +25,20 @@ layout: compress
   {% seo %}
 
   <!-- Bootstrap core CSS -->
-  <link href="{{ 'assets/bootstrap/css/bootstrap.min.css' | absolute_url }}" rel="stylesheet">
+  <link href="{{ 'assets/bootstrap/css/bootstrap.min.css' | relative_url }}" rel="stylesheet">
 
   <!-- Custom fonts for this template -->
-  <link href="{{ 'assets/fontawesome-free/css/all.min.css' | absolute_url }}" rel="stylesheet">
-  <link rel="stylesheet" href="{{ 'assets/simple-line-icons/css/simple-line-icons.css' | absolute_url }}">
+  <link href="{{ 'assets/fontawesome-free/css/all.min.css' | relative_url }}" rel="stylesheet">
+  <link rel="stylesheet" href="{{ 'assets/simple-line-icons/css/simple-line-icons.css' | relative_url }}">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 
   <!-- Plugin CSS -->
-  <link rel="stylesheet" href="{{ 'assets/device-mockups/device-mockups.min.css' | absolute_url }}">
+  <link rel="stylesheet" href="{{ 'assets/device-mockups/device-mockups.min.css' | relative_url }}">
 
   <!-- Custom styles for this template -->
-  <link href="{{ 'assets/css/new-age.min.css' | absolute_url }}" rel="stylesheet">
+  <link href="{{ 'assets/css/new-age.min.css' | relative_url }}" rel="stylesheet">
 
 </head>
 
@@ -88,7 +88,7 @@ layout: compress
               <div class="device">
                 <div class="screen">
                   <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                  <img src="{{ page.hero-image | absolute_url }}" class="img-fluid" alt="">
+                  <img src="{{ page.hero-image | relative_url }}" class="img-fluid" alt="">
                 </div>
                 <div class="button">
                   <!-- You can hook the "home button" to some JavaScript events or just remove it -->
@@ -108,8 +108,8 @@ layout: compress
           <h2 class="section-heading">{{ page.download-title }}</h2>
           <p>{{ page.download-subtitle }}</p>
           <div class="badges">
-            <a class="badge-link" href="#"><img src="{{ 'assets/img/google-play-badge.svg' | absolute_url }}" alt=""></a>
-            <a class="badge-link" href="#"><img src="{{ 'assets/img/app-store-badge.svg' | absolute_url }}" alt=""></a>
+            <a class="badge-link" href="#"><img src="{{ 'assets/img/google-play-badge.svg' | relative_url }}" alt=""></a>
+            <a class="badge-link" href="#"><img src="{{ 'assets/img/app-store-badge.svg' | relative_url }}" alt=""></a>
           </div>
         </div>
       </div>
@@ -130,7 +130,7 @@ layout: compress
               <div class="device">
                 <div class="screen">
                   <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                  <img src="{{ page.features-image | absolute_url }}" class="img-fluid" alt="">
+                  <img src="{{ page.features-image | relative_url }}" class="img-fluid" alt="">
                 </div>
                 <div class="button">
                   <!-- You can hook the "home button" to some JavaScript events or just remove it -->
@@ -179,6 +179,13 @@ layout: compress
     </div>
   </section>
 
+  <section class="contact bg-primary" id="contact">
+    <div class="container">
+      {{ content }}
+    </div>
+  </section>
+
+
   <section class="cta">
     <div class="cta-content">
       <div class="container">
@@ -207,14 +214,14 @@ layout: compress
   </footer>
 
   <!-- Bootstrap core JavaScript -->
-  <script src="{{ 'assets/jquery/jquery.min.js' | absolute_url }}"></script>
-  <script src="{{ 'assets/bootstrap/js/bootstrap.bundle.min.js' | absolute_url }}"></script>
+  <script src="{{ 'assets/jquery/jquery.min.js' | relative_url }}"></script>
+  <script src="{{ 'assets/bootstrap/js/bootstrap.bundle.min.js' | relative_url }}"></script>
 
   <!-- Plugin JavaScript -->
-  <script src="{{ 'assets/jquery-easing/jquery.easing.min.js' | absolute_url }}"></script>
+  <script src="{{ 'assets/jquery-easing/jquery.easing.min.js' | relative_url }}"></script>
 
   <!-- Custom scripts for this template -->
-  <script src="{{ 'assets/js/new-age.min.js' | absolute_url }}"></script>
+  <script src="{{ 'assets/js/new-age.min.js' | relative_url }}"></script>
 
   {% include schema.html %}
     
