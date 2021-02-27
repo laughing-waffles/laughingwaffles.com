@@ -42,12 +42,12 @@ defaults:
   - scope:
       path: ''
     values:
-      layout: page
+      layout: default
       author: laughingwaffles
   - scope:
       path: _pages
     values:
-      layout: page
+      layout: default
       permalink: '/:basename'
 compress_html:
   clippings: all
